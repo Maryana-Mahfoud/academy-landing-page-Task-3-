@@ -1,0 +1,105 @@
+
+.mission-visions-section {
+    margin-top: 200px;
+    padding: 80px 5%;
+    background-color: #FFF5F5; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.section-header {
+    text-align: center;
+    max-width: 1596px;
+}
+
+.sub-title-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #1E1E1E;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    max-width: 996px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    max-width: 1596px;
+    width: 100%;
+}
+
+.card-item {
+    max-width: 768px;
+    max-height: 410px;
+    background: #FFFFFF;
+    border: 2px solid #1E1E1E;
+    border-radius: 15px;
+    padding: 60px;
+    position: relative;
+    box-shadow: 6px 6px 0px #1E1E1E;
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer;
+}
+.card-item:hover {
+    transform: translate(-4px, -4px); 
+    box-shadow: 10px 10px 0px #1E1E1E; 
+    background-color: #fffafb;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-header h3 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card-icon {
+    width: 90px; 
+    height: auto;
+}
+
+.card-item p {
+    color: #333333;
+    font-size: 20px;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 992px) {
+    .cards-grid {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .card-item {
+        padding: 30px;
+    }
+    .card-item p {
+    color: #333333;
+    font-size: 16px;
+}
+
+}

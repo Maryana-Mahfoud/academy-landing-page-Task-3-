@@ -3,7 +3,8 @@
     background-color: #FFFFFF;
     border: 2px solid #262626; 
     border-radius: 12px;
-    margin: 50px 4%;
+    margin: 50px auto;
+    max-width: 1819px;
     padding: 80px;
     box-shadow: 6px 6px 0px #262626;
     position: relative;
