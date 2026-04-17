@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+/* --- VARIABLES --- */
+:root {
+  /* Background Colors */
+    --primary-color: #FFF5F0;
+    --text-description:#4C4C4D;
+  /* Text Color */
+
+    --text-black: #1A1A1A;
+}
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lexend;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-black);
+    font-family: "Lexend", sans-serif;
+    line-height: 1.5;
+}
+
+.MainTexture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* --- TYPOGRAPHY --- */
+h1 {
+    font-weight: 500;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+p {
+    color: var(--text-description);
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+.section-margin {
+    margin-top: 200px;
+}
+/* --- CLASSES --- */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.flex-col {
+    flex-direction: column;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.col-reverse {
+    flex-direction: column-reverse;
+}
+
+span {
+    color: var(--text-special);
+}

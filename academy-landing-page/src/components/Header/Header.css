@@ -1,0 +1,39 @@
+
+.main-header {
+    max-width: 1819px;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.TopBanner {
+    width: 100%;
+}
+
+.TopBanner img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+@media (max-width: 1440px) {
+    .main-header {
+        max-width: 1393px;
+        padding: 16px;
+    }
+}
+@media (max-width: 480px) { 
+    .main-header {
+        max-width: 100%; 
+        padding: 16px; 
+    }
+    
+    .TopBanner img {
+        width: 100%; 
+    }
+}
+
+
+
+
+
+

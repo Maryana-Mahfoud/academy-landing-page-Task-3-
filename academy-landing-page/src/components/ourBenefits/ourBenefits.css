@@ -1,0 +1,111 @@
+
+.benefits-section {
+    margin: 200px auto 0 auto;
+    padding: 80px 5%;
+    max-width: 1592px;
+    text-align: center;
+}
+.section-title {
+    margin-bottom: 100px; 
+}
+.sub-title {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #262626;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+.section-title h2 {
+    font-size: 58px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #333333;
+    font-size: 21.5px;
+    margin: 0 auto;
+    max-width: 992px;
+    line-height: 1.6;
+}
+
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap:50px 40px; 
+}
+
+.benefit-card {
+    position: relative;
+    background: #FFFFFF;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    padding: 50px 30px 30px 30px;
+    text-align: left;
+    box-shadow: 6px 6px 0px #262626; 
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+.benefit-card:hover {
+    transform: translate(-5px, -5px); 
+    box-shadow: 12px 12px 0px #262626; 
+}
+
+.icon-box {
+    position: absolute;
+    top: -25px; 
+    left: 30px;
+    background: #FFEFE5;
+    border: 2px solid #262626;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box img {
+    width: 24px;
+    height: 24px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    color: #4C4C4D;
+    font-size: 20px;
+    line-height: 1.5;
+}
+@media (max-width: 1440px) {
+    .benefits-section {
+        margin: 150px auto 0 auto;
+        padding: 60px 5%;
+    }
+
+}
+@media (max-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title h2 {
+        font-size: 30px;
+    }
+}
