@@ -62,7 +62,7 @@ const OurTestimonials = ({ subTitle, title, paragraph, testimonialsData }: OurTe
             </div>
             
             <div className="testimonials-main-wrapper">
-                <button className="nav-btn side-btn prev" onClick={handlePrev}>
+                <button className="nav-btn-slider side-btn prev" onClick={handlePrev}>
                     <img src="/assets/Images/leftArrow.png" alt="prev" />
                 </button>
 
@@ -80,16 +80,16 @@ const OurTestimonials = ({ subTitle, title, paragraph, testimonialsData }: OurTe
                     ))}
                 </div>
 
-                <button className="nav-btn side-btn next" onClick={handleNext}>
+                <button className="nav-btn-slider side-btn next" onClick={handleNext}>
                     <img src="/assets/Images/rightArrow.png" alt="next" />
                 </button>
             </div>
 
             <div className="mobile-only-controls">
-                <button className="nav-btn" onClick={handlePrev}>
+                <button className="nav-btn-slider" onClick={handlePrev}>
                     <img src="/assets/Images/leftArrow.png" alt="prev" />
                 </button>
-                <button className="nav-btn" onClick={handleNext}>
+                <button className="nav-btn-slider" onClick={handleNext}>
                     <img src="/assets/Images/rightArrow.png" alt="next" />
                 </button>
             </div>

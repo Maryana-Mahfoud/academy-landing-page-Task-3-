@@ -53,14 +53,14 @@
     background: white;
     border: 2px solid #1E1E1E;
     border-radius: 12px;
-    padding: 50px 40px 40px 40px; 
+    padding: 60px 40px 40px 40px; 
     position: relative;
-    box-shadow: 8px 8px 0px #1E1E1E; 
+    box-shadow: 10px 10px 0px #1E1E1E;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 40px; 
 }
-
 
 .award-icon-container {
     width: 68px;
@@ -72,6 +72,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    box-shadow: 4px 4px 0px #1E1E1E;
     top: -34px; 
     left: 40px; 
 }
@@ -85,10 +86,14 @@
 
 .award-card .award-desc {
     font-size: 16px;
-    color: #59595A;
+    color: #4C4C4D; 
     line-height: 1.6;
 }
-
+.more-awards-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A1A1A;
+}
 
 .slider-controls {
     width: 100%;

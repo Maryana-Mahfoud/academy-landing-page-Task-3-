@@ -1,0 +1,126 @@
+
+.team-section {
+    max-width: 1596px; 
+    margin: 100px auto; 
+    padding: 0 5%; 
+    box-sizing: border-box;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px; 
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 800; 
+    color: #1A1A1A;
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;
+}
+
+
+.team-card {
+    background-color: #FFFFFF;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    padding: 50px; 
+    box-shadow: 10px 10px 0px #1A1A1A; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+
+.card-top-row {
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    justify-content: flex-start; 
+    gap: 15px; 
+}
+
+.teacher-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+.img-container {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFEFE5;
+    flex-shrink: 0;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teacher-name {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1A1A1A;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFCF5;
+    border: 2px solid #262626;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0px #1A1A1A;
+    flex-shrink: 0;
+    margin-left: auto; 
+    position: static; 
+    transform: none;
+}
+
+.icon-box img {
+    width: 24px;
+    height: 24px;
+    display: block; 
+    object-fit: contain;
+}
+
+
+.qualification-container {
+    background-color: #FFFFFF;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 1340px) {
+    .team-grid { gap: 30px; }
+    .team-card { padding: 35px; }
+}
+
+@media (max-width: 768px) {
+    .team-grid { grid-template-columns: 1fr; }
+    .team-card { padding: 25px; gap: 25px; box-shadow: 6px 6px 0px #1A1A1A; }
+    .card-top-row { flex-direction: row; justify-content: space-between; }
+    .teacher-name { font-size: 18px; }
+    .icon-box {
+        width: 44px;
+        height: 44px;
+        margin-left: auto; 
+    }
+}

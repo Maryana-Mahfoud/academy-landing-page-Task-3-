@@ -23,8 +23,8 @@ const OurBenefits = ({ subTitle, title, paragraph, benefitsData }: BenefitsProps
 
             <div className="benefits-grid">
                 {benefitsData.map((benefit, index) => (
-                    <div key={index} className="benefit-card">
-                        <div className="icon-box">
+                    <div key={index} className="benefit-box">
+                        <div className="benefit-icon-box">
                             <img src={benefit.icon} alt={benefit.titleCard} />
                         </div>
                         <div className="card-content">
