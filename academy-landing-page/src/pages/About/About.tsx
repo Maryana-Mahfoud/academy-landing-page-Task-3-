@@ -1,6 +1,6 @@
 
 import HeroAbout from "../../components/HeroAbout/HeroAbout"
-import { heroAboutData } from "../../components/HeroAbout/HeroAboutData"
+import { heroData } from "../../components/HeroAbout/HeroAboutData"
 import OurAwardsandRecognitions from "../../components/ourAwardsandRecognitions/ourAwardsandRecognitions";
 import { ourAwardsandRecognitionsData } from "../../components/ourAwardsandRecognitions/ourAwardsandRecognitionsData";
 import OurHistory from "../../components/ourHistory/ourHistory";
@@ -13,7 +13,7 @@ import "./About.css"
 const About = () => {
     return (
         <>
-        <HeroAbout {...heroAboutData}/>
+        <HeroAbout {...heroData.about}/>
         <main>
             <section>
             <OurMissionVisions {...missionVisionsData}/>
