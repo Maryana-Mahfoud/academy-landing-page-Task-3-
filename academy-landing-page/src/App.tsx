@@ -10,7 +10,6 @@ function App() {
     { label: "Academics", path: "/academics" },
     { label: "Admissions", path: "/admissions" },
     { label: "Student Life", path: "/studentLife" },
-    { label: "Student Life", path: "/studentLife" },
     { label: "Contact", path: "/contact" },
   ];
 

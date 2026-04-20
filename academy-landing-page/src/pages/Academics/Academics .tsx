@@ -8,6 +8,8 @@ import { featuresHeaderContent,feauterData } from "../../components/academicsCom
 import WhatStudentsLearn from "../../components/academicsComponents/whatStudentsLearn/WhatStudentsLearn";
 import { whatStudentsLearnData, whatStudentsLearnHeader } from "../../components/academicsComponents/whatStudentsLearn/WhatStudentsLearnData";
 
+import OurRoomsGallery from "../../components/academicsComponents/OurRoomsGallery/OurRoomsGallery";
+import { roomsData } from "../../components/academicsComponents/OurRoomsGallery/OurRoomsGalleryData";
 
 const Academics  = () => {
     return (
@@ -25,6 +27,13 @@ const Academics  = () => {
                     featurePar={whatStudentsLearnHeader.featurePar}
                     cardsItem={whatStudentsLearnData} 
                                     />
+            </section>
+            <section>
+                <OurRoomsGallery 
+                    subTitle="Our Gallery"
+                    title="Our Rooms Gallery"
+                    paragraph="Step into our Gallery and immerse yourself in a visual journey of cherished moments and unforgettable experiences at our kindergarten school."
+                    roomsData={roomsData} />
             </section>
         </main>
         </>

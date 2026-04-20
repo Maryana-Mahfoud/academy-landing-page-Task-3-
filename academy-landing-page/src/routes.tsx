@@ -5,6 +5,7 @@ import App from './App';
 import Academics from './pages/Academics/Academics ';
 
 
+
 // src/routes.tsx
 export const router = createBrowserRouter([
     {
@@ -21,6 +22,18 @@ export const router = createBrowserRouter([
         },
         {
             path: "academics",
+            element: <Academics />,
+        },
+        {
+            path: "admissions",
+            element: <Academics />,
+        },
+        {
+            path: "studentLife",
+            element: <Academics />,
+        },
+        {
+            path: "contact",
             element: <Academics />,
         },
         ],
