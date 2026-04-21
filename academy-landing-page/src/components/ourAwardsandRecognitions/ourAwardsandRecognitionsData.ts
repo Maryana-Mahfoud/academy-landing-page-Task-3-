@@ -1,4 +1,4 @@
-// ourAwardsData.ts
+
 
 export interface AwardItem {
     id: number;

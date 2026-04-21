@@ -1,4 +1,4 @@
-// HeroAboutData.js
+
 
 export const heroData = {
     about: {

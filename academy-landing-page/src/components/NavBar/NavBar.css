@@ -96,84 +96,92 @@
     }
 }
 @media (max-width: 992px) {
-    .navBar-container {
-        max-width: 357px; 
-        margin: 12px auto 0 auto;
-        display: flex;         
+.navBar-container {
+        max-width: 90%; 
+        margin: 12px auto;
+        display: flex;
         align-items: stretch; 
         justify-content: space-between;
         background-color: #FFFFFF;
-        border: 2px solid #262626; 
-        border-radius: 12px;       
-        position: relative; 
-        padding: 0;                
+        border: 2px solid #262626;
+        border-radius: 12px;
+        position: relative;
+        padding: 0;
+        height: 60px; 
+        overflow: visible; 
     }
 
-    .nav-Logo {
+.nav-Logo {
         background-color: #FF8D4D;
-        padding: 10px;
-        border: none;           
-        border-right: 2px solid #262626; 
+        padding: 0 15px; /* تقليل البادينج */
+        border: none;
+        border-right: 2px solid #262626;
         display: flex;
         align-items: center;
-        flex: 1;                  
+        justify-content: center;
+        flex: 0 0 auto; /* يمنع اللوجو من التمدد بشكل مبالغ فيه */
+        border-radius: 10px 0 0 10px;
+    }
+    .nav-Logo img {
+        height: 30px; /* تصغير حجم اللوجو ليتناسب مع الارتفاع الجديد */
+        width: auto;
+    }
+    .nav-spacer {
+        flex-grow: 1;
+        background-color: #FFF;
     }
 
     .nav-Logo {
         border-radius: 10px 0 0 10px;
     }
 
-    .menu-icon {
-        display: flex;             
+.menu-icon {
+        display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        background-color: #FFEFE5; 
-        padding: 0 20px;
-        border-radius:  12px 12px ;
+        background-color: #F7F7F8; /* لون فاتح متناسق */
+        padding: 0 15px;
+        border-radius: 0 10px 10px 0;
+        border-left: 2px solid #262626; /* فصل الأيقونة عن الفراغ الأبيض */
     }
 
-    .nav-spacer {
-        flex-grow: 1;       
-        background-color: #FFF;  
-    }
+
     .navItem {
-        display: block; 
+ display: block;
         position: absolute;
-        top: 100%; 
-        left: -2px; 
-        width: calc(100% + 4px); 
+        top: calc(100% + 10px); /* ترك مسافة بسيطة تحت البار */
+        left: 0;
+        right: 0;
+        width: 100%;
         background-color: #FFFFFF;
         border: 2px solid #262626;
-        border-top: none;
-        z-index: 9999; 
+        border-radius: 12px;
+        z-index: 9999;
+        /* الخفاء والظهور */
         max-height: 0;
-        overflow: hidden;
         opacity: 0;
-        transition: all 0.4s ease-in-out;
-        pointer-events: none; 
+        transition: all 0.3s ease-in-out;
+        pointer-events: none;
     }
 
-    .navItem.active {
-        max-height: 500px; 
+.navItem.active {
+        max-height: 500px;
         opacity: 1;
         pointer-events: auto;
-        padding-top: 1px; 
+        padding: 10px 0;
     }
-
-    .navItem ul {
-        flex-direction: column; 
-        max-width: 100%;
+.navItem ul {
+        flex-direction: column;
         border: none;
-        border-radius: 0;
-        padding: 0;
+        background: transparent;
     }
 
-    .navItem ul li {
-        width: 100%;
-        border-right: none !important; 
-        border-bottom: 1px solid #262626;
-        padding: 15px;
+.navItem ul li {
+        border-right: none !important;
+        border-bottom: 1px solid #F1F1F3;
+        padding: 15px 20px;
+        text-align: left; /* القائمة الجانبية غالباً أجمل لليسار */
     }
 
     .navItem ul li:last-child {

@@ -30,7 +30,6 @@
     line-height: 1.6;
 }
 
-/* --- Grid System --- */
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 

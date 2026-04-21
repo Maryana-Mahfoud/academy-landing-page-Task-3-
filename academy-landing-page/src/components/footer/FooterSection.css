@@ -87,7 +87,7 @@
     flex-shrink: 0;
 }
 
-/* شبكة الروابط */
+
 .footer-links-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
